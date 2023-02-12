@@ -19,7 +19,7 @@ export default function Products( ){
    },[dispatch])
  
    return(
-   <>
+   <div className="root_container">
    <Header/>
    {status==='loading'? <Spinner/>: ''}
    <div className="card-conteiner">
@@ -32,6 +32,6 @@ export default function Products( ){
    }
       
    </div>
-   </>
+   </div>
    )
 }
