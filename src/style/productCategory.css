@@ -1,0 +1,12 @@
+.productCategory-container{
+      display: grid;
+      grid-template-columns: repeat(4,300px);
+      grid-template-rows: auto;
+      gap: 20px;
+      }
+h1{
+      margin: 50px 0 0 50px;   
+}
+h1:first-letter {
+      text-transform:uppercase ;
+}

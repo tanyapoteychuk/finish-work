@@ -1,0 +1,33 @@
+header{
+   top: 0px;
+    right: 0px;
+    left: 0px;
+}
+.container{
+   margin: 0;
+   display: grid;
+   grid-template-columns: 10% 35% 55% 10%;
+   gap: 25px;
+   
+}
+.header_logo {
+   width: 70px;
+ 
+}
+.header_logo img{
+   width: 100%;  
+   object-fit: fill;
+   border-radius: 100%;
+ 
+}
+.sign-up{
+   background-color:#F24405;
+   color:white
+}
+.sing-cart{
+   font-size:30px;
+   color:white;
+}
+.sing-cart:hover{
+font-size: 37px;
+}

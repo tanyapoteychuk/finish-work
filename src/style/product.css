@@ -1,0 +1,25 @@
+.card-container{
+   display: grid;
+   grid-template-columns: 50% 35%;
+   grid-template-rows: 50%;
+   gap: 80px;
+   margin: 60px;
+
+ 
+}
+
+/* .product-conteiner{
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   margin: 20px;
+}
+.product-conteiner img{
+   width: 70%;
+}
+.product-conteiner p{
+   font-size: 20px;
+}
+.product-logo-cart{
+   height: 20px;
+} */

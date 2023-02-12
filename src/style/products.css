@@ -1,0 +1,96 @@
+.root_container{
+   margin: 80px 0;
+}
+.card-article{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   gap: 10px;
+   margin: 50px 50px 0 50px;
+   box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+   width: 255px;
+   height:400px;
+   padding: 10px 10px 10px 20px;
+}
+
+.card-conteiner{
+   display: grid;
+   grid-template-columns: repeat(4,300px);
+   grid-template-rows: auto;
+   gap: 20px;
+}
+.card-image{
+   height: 160px;
+   width: 100%;
+   align-items: center;
+}
+.card-image img{
+   height: 100%;
+   width: 95%;
+   object-fit: contain;
+}
+
+.card-title{
+   text-decoration: none;
+   color: black;
+   text-align:right;
+   padding-top: 20px;
+
+}
+.card-text{
+   font-size: 14px;
+   font-weight: 400;
+}
+
+.link{
+   text-decoration: none;
+   color: black;
+}
+.card-body{
+   display: flex;
+   flex-direction: column;
+   justify-content:space-between;
+   align-items: flex-start;
+   gap: 10px;
+
+   
+}
+.priceAfter{
+   font-size: 22px;
+   font-weight: 500;
+}
+.Discount{
+   background-color:#D4D943;
+   color: #0b3a17;
+   font-weight: 600;
+   font-size: 18px;
+   border-radius: 100%;
+   margin: 10px;
+   padding: 10px 5px ;
+
+}
+.priceBefore{
+   text-decoration: line-through;
+   color: #a0a0a4;
+   font-size:16px;
+   
+}
+.card-footer{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   
+}
+.card-footer i{
+   font-size: 16px;
+}
+.card-footer:last-child{
+   padding: 10px 0px ;
+   border-top:1.5px solid rgb(153, 150, 150);
+   margin-top: 5px;
+}
+.card-article:last-child{
+   margin-bottom: 5px;
+}
