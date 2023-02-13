@@ -1,3 +1,7 @@
+.root_container{
+      margin: 150px 0;
+   }
+
 .productCategory-container{
       display: grid;
       grid-template-columns: repeat(4,300px);

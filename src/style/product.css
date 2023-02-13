@@ -1,3 +1,8 @@
+.root_container{
+   margin: 150px 0;
+
+}
+
 .card-container{
    display: grid;
    grid-template-columns: 50% 35%;

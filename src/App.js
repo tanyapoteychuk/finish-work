@@ -14,7 +14,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 function App() {
   return (
   <>
-
 <BrowserRouter>
   <Routes>
     <Route path="/" element={<Products/>}/>

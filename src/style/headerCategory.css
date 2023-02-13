@@ -29,9 +29,9 @@
 
 .menu {
 	position: absolute;
-	top: 81px;
+	top: 70px;
 	left: -30px;
-	width: 26%;
+	width: 20%;
 	height: 100%;
 	padding: 14px;
 	z-index: 999;

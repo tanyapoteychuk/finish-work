@@ -22,7 +22,7 @@ useEffect(()=>{
 },[id,setProduct])
  console.log('product====>',product);  
 return(
-     <>
+     <div className="root_container">
      <Header/>
      {product && 
      <article className="card-container">
@@ -45,6 +45,6 @@ return(
      }
     
      <Link to="/">Вернуться назад</Link>
-     </>
+     </div>
    )
 }
