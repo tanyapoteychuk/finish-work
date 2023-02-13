@@ -37,17 +37,19 @@ const totalProducts=b.reduce((sum,count)=>sum+count,0)
    <>
    <Header/>
    <div className="root_container">
+   <Link to="/" className="linkCart">BACK TO SHOPPING</Link>
    <h2>Cart</h2>
-   <Link to="/">Вернуться к покупкам</Link>
-   <div>
-      <label> Choose all products
-         <input type="checkbox" checked={chechedAll} onChange={()=>chooseAllProducts()}/>
-      </label>
-   </div>
+   
     
    
    <section >
+    
       <div>
+      <div>
+      <label className="input_label"> Choose all products   
+         <input type="checkbox" checked={chechedAll} onChange={()=>chooseAllProducts()}/>
+      </label>
+   </div>     
          {cartProducts.map(prod=>
          <div 
          key={prod.id}
@@ -70,9 +72,12 @@ const totalProducts=b.reduce((sum,count)=>sum+count,0)
                   </div>
             </div>
                <div className="cardProduct-price">
-                  <span className="priceBefore">{ (Math.round(prod.price*100/(100-prod.discountPercentage)))*prod.count } $</span>
-                  <span className="priceAfter"> {prod.price*prod.count} $</span>
-                  <i className="bi bi-trash3" onClick={()=>dispatch(deleteProduct(prod.id))}/>
+                  <div>
+                     <span className="priceBefore">{ (Math.round(prod.price*100/(100-prod.discountPercentage)))*prod.count } $</span>
+                     <span className="priceAfter"> {prod.price*prod.count} $</span>
+                  </div>
+                 
+                  <i className="bi bi-trash3 larger" onClick={()=>dispatch(deleteProduct(prod.id))}/>
                </div>
             </div>
             <div>

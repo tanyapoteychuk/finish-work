@@ -1,5 +1,5 @@
 .root_container{
-   margin: 150px 0;
+   margin: 100px 50px;
 
 }
 section{
@@ -9,15 +9,21 @@ section{
    position: relative;
   
 }
-
+h2{
+   font-size: 30px;
+   margin: 30px 0 30px 0;
+   font-weight: 900;
+}
+.input_label{
+   color: #F24405;
+   font-weight: 800;
+   font-size: 18px;
+   
+}
+input{
+   padding-left: 20px;
+}
 .cardProduct{
-   /* display: flex;
-   align-items: flex-start;
-   border-bottom: 1px solid lightgrey;
-   padding: 20px 10px;
-   gap: 20px;
-   width: 90%; */
-
    display: grid;
    grid-template-columns: 25% 50% 10%;
    gap: 25px;
@@ -31,13 +37,19 @@ section{
 }
 .cardProduct-text{
    display: grid;
-   grid-template-columns: 300px 70px;
-   gap: 10px;
+   grid-template-columns: 80% 20%;
+   
 }
 .cardProduct-text :nth-child(3){
-   font-size: 14px;
+   font-size: 16px;
 }
 .cardProduct-price {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}
+.cardProduct-price div{
    display: flex;
    flex-direction: column;
 }
@@ -48,13 +60,14 @@ section{
    
 }
 .cardProduct-count{
-   background-color: lightgray;
+   background-color: #D4D943;
    width: 30%;
    border-radius: 5px;
    display: flex;
    justify-content: center;
    align-items: center;
    gap: 10px;
+   cursor: pointer;
 }
 .cardProduct-count span{
    font-size: 18px;
@@ -72,9 +85,10 @@ section{
 .total-information h6 {
    font-size:25px;
    text-align: center;
+ 
 }
 .total-information div{
-   background-color:rgb(145, 9, 145);
+   background-color:#F24405;
    color: white;
    padding: 5px 10px;
    border-radius: 5px;
@@ -83,6 +97,18 @@ section{
    
 }
 .total-information div:hover{
-   background-color: rgb(185, 117, 194);
+   background-color:  #F29F05;
    cursor: pointer;
+}
+
+.linkCart{
+   text-decoration: none;
+   font-size: 14px;
+   font-weight: 800;
+   cursor: pointer;
+   margin:0 0 80px 0px;
+   color:black
+}
+.linkCart:hover{
+   color:#F24405;
 }

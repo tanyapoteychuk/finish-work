@@ -24,27 +24,27 @@ useEffect(()=>{
 return(
      <div className="root_container">
      <Header/>
+     <Link to="/" className="linkProduct">BACK</Link>
+
      {product && 
      <article className="card-container">
         <Carusel product={product}/>
         <div className="product-conteiner">
           <h2>{product.title}</h2>
-          <p>Brand: {product.brand}</p>
-          <p>Description: {product.description}</p>
-          <div>
+          <span>Brand: <p>{product.brand}</p></span> 
+          <span>Description: <p>{product.description}</p></span>
+          <div className="product-container-price">
             <span className="priceAfter">{product.price} $</span>
-            <span className="Discount"> - {product.discountPercentage} %</span>
+            <span className="discount"> - {product.discountPercentage} %</span>
             <span className="priceBefore">{ Math.round(product.price*100/(100-product.discountPercentage)) } $</span>
           </div>
           <Rating value={product.rating}/> <span>{product.rating}</span>
-          <p>stock : {product.stock}</p>
+          <p className="stock">stock : {product.stock}</p>
            <CartButton product={product}/>
         </div>
      </article>
      
      }
-    
-     <Link to="/">Вернуться назад</Link>
      </div>
    )
 }
