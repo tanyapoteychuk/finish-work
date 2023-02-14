@@ -22,7 +22,7 @@ export default function Products( ){
    <div className="root_container ">
       <Header/>
       {status==='loading'? <Spinner/>: ''}
-      <div className="card-conteiner d-flex flex-wrap justify-content-center">
+      <div className="card-conteiner d-flex flex-wrap m-auto w-75">
          {searchProduct.length>0? <div onClick={()=>dispatch(clearSearchProducts())}>GO BACK MAIN PAGE</div>: ''}    
          {searchProduct.length>0 ?
          searchProduct.map(product=>

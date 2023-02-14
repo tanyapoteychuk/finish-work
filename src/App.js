@@ -8,6 +8,8 @@ import {
   Route
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
+import SignUp from "./components/auth/sign-up";
+import Login from "./components/auth/login";
 
 
 
@@ -21,6 +23,8 @@ function App() {
     <Route path="/products/category/:category" element={<ProductCategory/>}/> 
     <Route path="/cart" element={<Cart/>}/>
     <Route path="/cart/products/:id" element={<Product/>}/> 
+    <Route path="/sign-up" element={<SignUp/>}/>
+    <Route path="/login" element={<Login/>}/>
   </Routes>
   </BrowserRouter>  
 

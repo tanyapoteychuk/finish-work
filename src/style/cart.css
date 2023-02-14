@@ -112,3 +112,12 @@ input{
 .linkCart:hover{
    color:#F24405;
 }
+.cartEmply{
+   margin-top: 150px;
+   margin-left: 100px;
+
+}
+.cartEmply p {
+   font-size: 25px;
+   font-weight: 800;
+}

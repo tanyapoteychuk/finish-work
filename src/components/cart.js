@@ -36,12 +36,11 @@ const totalProducts=b.reduce((sum,count)=>sum+count,0)
    return(
    <>
    <Header/>
+   {cartProducts.length>0 ? 
+
    <div className="root_container">
    <Link to="/" className="linkCart">BACK TO SHOPPING</Link>
    <h2>Cart</h2>
-   
-    
-   
    <section >
     
       <div>
@@ -86,19 +85,19 @@ const totalProducts=b.reduce((sum,count)=>sum+count,0)
          </div>
          )}
       </div>
-    {cartProducts.length>0 ? 
+   
     <div className="total-information">
          <h6>Total : <span>{totalCost} $</span></h6>
          <h6>Products : <span>{totalProducts}</span> </h6>
          <div>CHECKOUT</div>
-      </div>:
-      <div><p>CART IS EMPTY</p></div>
-    }
+      </div>
    </section>
 
 
    </div>
-  
+  :
+  <div className="cartEmply"><p>CART IS EMPTY</p></div>
+   }
    
    </>
 )
