@@ -24,7 +24,7 @@ return (
    <div className="root_container">
       <Header/>
       <h1>{category}</h1>
-      <div className="productCategory-container">
+      <div className="card-conteiner d-flex flex-wrap m-auto w-75">
          {productsCategory.map(product=>
             <article className="card-article" key={product.id}>
             <Link to={`/products/${product.id}`} className="link">

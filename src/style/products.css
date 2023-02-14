@@ -85,3 +85,13 @@
 .card-article:last-child{
    margin-bottom: 5px;
 }
+.goMainPage{
+   font-size: 14px;
+   font-weight: 800;
+   cursor: pointer;
+   margin:0 0 30px 0px;
+   color:black
+}
+.goMainPage:hover{
+   color:#F24405;
+}

@@ -1,11 +1,12 @@
 .root_container{
-      margin: 150px 50px;
+      margin: 150px 50px ;
+      
    }
 
 .productCategory-container{
-      display: grid;
-      grid-template-columns: repeat(4,300px);
-      grid-template-rows: auto;
+      display: flex;
+     margin:0 auto;
+    
       gap: 20px;
       }
 h1{

@@ -27,10 +27,7 @@ return(
       aria-label="Search"
       onChange={(e)=>setValue(e.target.value)}/>
    </form> 
-   // <form onSubmit={(e)=>handleSubmit(e)}>
-   //    <input type="text" onChange={(e)=>setValue(e.target.value)}/>
-      
-   // </form>
+   
 )
 
 }
